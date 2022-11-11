@@ -11,7 +11,7 @@ function calcularDes (){
     if(descuentoDesc.value < 100){
         let descuento = montoDesc.value * (descuentoDesc.value / 100);
         let final = montoDesc.value - descuento;
-        modificarCal.innerHTML = final;
+        modificarCal.innerHTML = final + "<br>" + "El descuento es " + descuento;
     }else{
         modificarCal.innerHTML = "Ingresar descuento entre 1% y 100%"
     }
